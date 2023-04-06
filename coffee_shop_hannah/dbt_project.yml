@@ -35,4 +35,6 @@ models:
   coffee_shop_hannah:
     # Config indicated by + and applies to all files under models/example/
     customers:
-      +materialized: view
+      materialized: view
+    customers_monthly:
+      materialized: view
