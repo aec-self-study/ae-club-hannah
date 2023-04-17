@@ -38,3 +38,5 @@ models:
       materialized: view
     customers_monthly:
       materialized: view
+    user_stitching:
+      materialized: view
