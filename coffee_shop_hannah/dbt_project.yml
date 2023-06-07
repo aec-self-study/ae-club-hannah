@@ -40,7 +40,7 @@ models:
       materialized: view
     user_stitching:
       materialized: view
-    item_sales:
+    weekly_sales:
       materialized: view
     product_type_sales:
       materialized: view
