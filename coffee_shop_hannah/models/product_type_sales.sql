@@ -1,9 +1,8 @@
-{% set product_categories = ['coffee_beans', 'merch', 'brewing_supplies'] %}
-
+{% set product_categories = ["coffee_beans", "merch", "brewing_supplies"] %}
 select
   date_trunc(start_of_week, month) as date_month,
   {% for product_category in product_categories %}
-  sum(case when category = {{product_category}} then revenue end) as {{product_category}}_amount
+  sum(case when category = '{{product_category}}' then revenue end) as {{product_category}}_amount
   {% if not loop.last %},{% endif %}
   {% endfor %}
   --sum(case when category = 'coffee beans' then revenue end) as coffee_beans_amount,
