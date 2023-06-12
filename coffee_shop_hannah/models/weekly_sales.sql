@@ -25,6 +25,11 @@ order by 1,2
 select 
   start_of_week,
   date_add(start_of_week,interval 6 day) as end_of_week,
-  category,
+  case
+    when category = 'coffee beans' then 'coffee_beans'
+    when category = 'merch' then 'merch'
+    when category = 'brewing supplies' then 'brewing_supplies'
+    else null
+  end as category,
   revenue
 from categories

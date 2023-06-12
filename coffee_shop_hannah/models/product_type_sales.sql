@@ -1,4 +1,4 @@
-{% set product_categories = ['coffee beans', 'merch', 'brewing supplies'] %}
+{% set product_categories = ['coffee_beans', 'merch', 'brewing_supplies'] %}
 
 select
   date_trunc(start_of_week, month) as date_month,
