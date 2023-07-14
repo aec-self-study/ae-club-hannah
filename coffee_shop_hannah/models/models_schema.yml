@@ -17,6 +17,11 @@ sources:
               - unique
               - not_null
 
+  name: advanced_dbt_examples
+  project: analytics-engineers-club
+  tables:
+    - name: form_events
+
 models:
   - name: customers
     description: "Cleaned up data for our customers"
