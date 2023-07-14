@@ -44,4 +44,6 @@ models:
       materialized: view
     product_type_sales:
       materialized: view
+    form_respondents:
+      materialized: incremental
     
