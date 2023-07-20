@@ -22,8 +22,15 @@ def sq_int(x):
 sq_int(5)
 sq_int(40)
 
-y=5
-x=4
+def is_even(x):
+    return(x % 2 == 0)
+
+is_even(2)
+
+def is_odd(x):
+    return(x % 2 != 0)
+
+is_odd(2)
 
 def describe_evenness(x):
     if is_even(x):
@@ -33,6 +40,7 @@ def describe_evenness(x):
     else:
         print("It's neither even nor odd!")
 
+y=5
 describe_evenness(y)
 
 for x in my_first_list:
